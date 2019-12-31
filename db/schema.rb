@@ -21,19 +21,26 @@ ActiveRecord::Schema.define(version: 2019_12_30_025614) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "groups_students", id: false, force: :cascade do |t|
+    t.bigint "student_id"
+    t.bigint "group_id"
+    t.index ["group_id"], name: "index_groups_students_on_group_id"
+    t.index ["student_id"], name: "index_groups_students_on_student_id"
+  end
+
+  create_table "groups_teachers", id: false, force: :cascade do |t|
+    t.bigint "teacher_id"
+    t.bigint "group_id"
+    t.index ["group_id"], name: "index_groups_teachers_on_group_id"
+    t.index ["teacher_id"], name: "index_groups_teachers_on_teacher_id"
+  end
+
   create_table "students", force: :cascade do |t|
     t.string "name"
     t.string "last_name"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "students_groups", id: false, force: :cascade do |t|
-    t.bigint "student_id"
-    t.bigint "group_id"
-    t.index ["group_id"], name: "index_students_groups_on_group_id"
-    t.index ["student_id"], name: "index_students_groups_on_student_id"
   end
 
   create_table "teachers", force: :cascade do |t|
@@ -47,13 +54,6 @@ ActiveRecord::Schema.define(version: 2019_12_30_025614) do
     t.datetime "remember_created_at"
     t.index ["email"], name: "index_teachers_on_email", unique: true
     t.index ["reset_password_token"], name: "index_teachers_on_reset_password_token", unique: true
-  end
-
-  create_table "teachers_groups", id: false, force: :cascade do |t|
-    t.bigint "teacher_id"
-    t.bigint "group_id"
-    t.index ["group_id"], name: "index_teachers_groups_on_group_id"
-    t.index ["teacher_id"], name: "index_teachers_groups_on_teacher_id"
   end
 
 end
