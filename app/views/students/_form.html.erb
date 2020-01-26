@@ -26,6 +26,11 @@
     <%= form.text_field :email %>
   </div>
 
+  <div class="field">
+    <%= form.label :group %>
+    <%= form.select(:group_ids, options_for_select(Group.all.collect { |group| [ group.name, group.id ] }, ([student.groups.last.name, student.groups.last.id] if student.id))) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

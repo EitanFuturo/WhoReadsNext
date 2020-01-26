@@ -46,12 +46,12 @@ sequence|table|24784|24786|1
       <StateNumber>668</StateNumber>
       <Owner>eitanabelson</Owner>
       <IntrospectionStateNumber>436</IntrospectionStateNumber>
-      <Relations>sequence|table|16402|16404|1
+      <Relations>sequence|table|16413|16437|1
+sequence|table|16402|16404|1
+sequence|table|16413|16415|1
 sequence|table|16523|16525|1
 sequence|table|16534|16536|1
 sequence|table|16435|16437|1
-sequence|table|16413|16415|1
-sequence|table|16413|16437|1
 </Relations>
     </database>
     <database id="9" parent="1" name="myapp_test">
