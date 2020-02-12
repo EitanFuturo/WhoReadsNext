@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @meeting.date %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @meeting.venue %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @meeting.group.name %>
+</p>
+
+<p>
+  <strong>Teachers:</strong>
+  <%= @meeting.teachers.collect(&:email).join(', ') %>
+</p>
+
+<p>
+  <strong>Students:</strong>
+  <%= @meeting.students.collect(&:name).join(', ') %>
+</p>
+
+<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+<%= link_to 'Back', meetings_path %>
