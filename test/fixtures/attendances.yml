@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student: one
+  meeting: one
+  attended: false
+  had_text: false
+  read_text: false
+
+two:
+  student: two
+  meeting: two
+  attended: false
+  had_text: false
+  read_text: false
