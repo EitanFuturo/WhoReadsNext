@@ -24,6 +24,8 @@
       <Relations>sequence|table|16664|16666|1
 sequence|table|24773|24775|1
 sequence|table|24784|24786|1
+sequence|table|32961|32963|1
+sequence|table|32978|32980|1
 </Relations>
     </database>
     <database id="5" parent="1" name="WhoReadsNext1_test">
@@ -46,12 +48,12 @@ sequence|table|24784|24786|1
       <StateNumber>668</StateNumber>
       <Owner>eitanabelson</Owner>
       <IntrospectionStateNumber>436</IntrospectionStateNumber>
-      <Relations>sequence|table|16413|16437|1
-sequence|table|16523|16525|1
-sequence|table|16534|16536|1
+      <Relations>sequence|table|16435|16437|1
 sequence|table|16402|16404|1
 sequence|table|16413|16415|1
-sequence|table|16435|16437|1
+sequence|table|16523|16525|1
+sequence|table|16534|16536|1
+sequence|table|16413|16437|1
 </Relations>
     </database>
     <database id="9" parent="1" name="myapp_test">
@@ -235,7 +237,15 @@ sequence|table|16435|16437|1
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="37" parent="27" name="groups_id_seq">
+    <sequence id="37" parent="27" name="attendances_id_seq">
+      <ObjectId>32978</ObjectId>
+      <Owner>eitanabelson</Owner>
+      <StateNumber>803</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="38" parent="27" name="groups_id_seq">
       <ObjectId>24773</ObjectId>
       <Owner>eitanabelson</Owner>
       <StateNumber>769</StateNumber>
@@ -243,7 +253,15 @@ sequence|table|16435|16437|1
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="38" parent="27" name="students_id_seq">
+    <sequence id="39" parent="27" name="meetings_id_seq">
+      <ObjectId>32961</ObjectId>
+      <Owner>eitanabelson</Owner>
+      <StateNumber>798</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="40" parent="27" name="students_id_seq">
       <ObjectId>24784</ObjectId>
       <Owner>eitanabelson</Owner>
       <StateNumber>770</StateNumber>
@@ -251,7 +269,7 @@ sequence|table|16435|16437|1
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="39" parent="27" name="teachers_id_seq">
+    <sequence id="41" parent="27" name="teachers_id_seq">
       <ObjectId>16664</ObjectId>
       <Owner>eitanabelson</Owner>
       <StateNumber>765</StateNumber>
