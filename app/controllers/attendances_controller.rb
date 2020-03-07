@@ -61,8 +61,8 @@ class AttendancesController < ApplicationController
     end
   end
 
-  def set_new_attendance
-    self
+  def set_new_attendances
+    @group = Group.find(params[:group])
   end
 
   private

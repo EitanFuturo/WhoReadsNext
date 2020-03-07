@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   devise_for :teachers
   resources :teachers
 
-  post 'home/set_new_attendance', to: 'attendances#set_new_attendance', as: 'set_new_attendance'
+  post 'home/set_new_attendances', to: 'attendances#set_new_attendances', as: 'set_new_attendances'
 
   root to: "home#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

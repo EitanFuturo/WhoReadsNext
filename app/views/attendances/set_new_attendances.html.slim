@@ -1,0 +1,5 @@
+h1 prueba
+
+- @group.students.each do | student |
+  - attendance = Attendance.new(student: student)
+  = render 'form', attendance: attendance
